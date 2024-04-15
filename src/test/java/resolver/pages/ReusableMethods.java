@@ -7,8 +7,8 @@ public class ReusableMethods {
 	public WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	public String baseUrl = "file:///" + projectPath + "/temp/QE-index.html";
-	public void setupDriver() {
 
+	public void setupDriver() {
 		String chromeDriverPath = projectPath + "\\drivers\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		driver = new ChromeDriver();

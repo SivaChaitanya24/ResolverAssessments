@@ -4,8 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class test1 extends BaseTest{
+public class test1 extends BaseTest {
 	private WebDriver driver;
+
 	// Verify elements of pages is visible or not
 	@Test
 	public void testLoginPageElementsVisibility() {

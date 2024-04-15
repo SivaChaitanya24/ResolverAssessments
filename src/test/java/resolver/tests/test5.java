@@ -12,18 +12,20 @@ import org.testng.annotations.Test;
 
 public class test5 extends BaseTest {
 	private WebDriver driver;
+
 	// Validation of fifth test in the assessment
 	@Test
 	public void Test5_SucessMessageValidation() {
 		// Navigate to the home page
 		driver.findElement(resolver.pages.HomePage.HomeLink).click();
 
-		// In the test 5 div, wait for a button to be displayed (note: the delay is random) and then click it
+		// In the test 5 div, wait for a button to be displayed (note: the delay is
+		// random) and then click it
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(resolver.pages.HomePage.Button));
 
 		WebElement buttonElement = driver.findElement(resolver.pages.HomePage.Button);
-		
+
 		// Scrolling webpage until element is found
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", buttonElement);

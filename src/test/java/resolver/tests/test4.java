@@ -6,8 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class test4 extends BaseTest{
+public class test4 extends BaseTest {
 	private WebDriver driver;
+
 	@Test
 	public void Test4_ButtonEnabledDisableValidation() {
 		// Navigate to the home page
