@@ -17,10 +17,6 @@ public class test4 extends BaseTest {
 		WebElement firstButton = driver.findElement(resolver.pages.HomePage.button1);
 		WebElement secondButton = driver.findElement(resolver.pages.HomePage.button2);
 
-		// Scrolling webpage until element is found
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", firstButton);
-
 		// Assert that the first button is enabled
 		boolean FirstButton = firstButton.isEnabled();
 		Assert.assertEquals(FirstButton, true);

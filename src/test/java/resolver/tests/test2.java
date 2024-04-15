@@ -18,10 +18,6 @@ public class test2 extends BaseTest {
 
 		WebElement dropdownElement = driver.findElement(resolver.pages.HomePage.dropdown);
 
-		// Scrolling webpage until element is found
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", dropdownElement);
-
 		// Use the Select class to interact with the dropdown element
 		Select dropdown = new Select(dropdownElement);
 

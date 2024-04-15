@@ -26,10 +26,6 @@ public class test5 extends BaseTest {
 
 		WebElement buttonElement = driver.findElement(resolver.pages.HomePage.Button);
 
-		// Scrolling webpage until element is found
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", buttonElement);
-
 		buttonElement.click();
 
 		// Once you've clicked the button, assert that a success message is displayed

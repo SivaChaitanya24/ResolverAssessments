@@ -1,6 +1,5 @@
 package resolver.tests;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -17,10 +16,6 @@ public class test3 extends BaseTest {
 		driver.findElement(resolver.pages.HomePage.HomeLink).click();
 
 		WebElement dropdownElement = driver.findElement(resolver.pages.HomePage.dropdown);
-
-		// Scrolling webpage until element is found
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", dropdownElement);
 
 		// Use the Select class to interact with the dropdown element
 		Select dropdown = new Select(dropdownElement);
