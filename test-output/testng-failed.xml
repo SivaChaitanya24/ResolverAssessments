@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="resolver.tests.test2">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Test3_DropDown"/>
+        </methods>
+      </class> <!-- resolver.tests.test2 -->
+      <class name="resolver.tests.test1">
+        <methods>
+          <include name="testLoginPageElementsVisibility"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- resolver.tests.test1 -->
+      <class name="resolver.tests.test3">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Test3_DropDown"/>
+        </methods>
+      </class> <!-- resolver.tests.test3 -->
+      <class name="resolver.tests.test6">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- resolver.tests.test6 -->
+      <class name="resolver.tests.test5">
+        <methods>
+          <include name="Test5_SucessMessageValidation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- resolver.tests.test5 -->
+      <class name="resolver.tests.test4">
+        <methods>
+          <include name="Test4_ButtonEnabledDisableValidation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- resolver.tests.test4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

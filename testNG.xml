@@ -3,8 +3,13 @@
 <suite name="Suite">
   <test thread-count="1" name="Test">
     <classes>
-      <class name="resolver.tests.tests"/>
-      <class name="resolver.pages.LoginPage"/>
+      <class name="resolver.tests.test5"/>
+      <class name="resolver.tests.test4"/>
+      <class name="resolver.tests.test6"/>
+      <class name="resolver.tests.test1"/>
+      <class name="resolver.tests.test3"/>
+      <class name="resolver.tests.test2"/>
+      <class name="resolver.tests.BaseTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
